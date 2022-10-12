@@ -2,7 +2,7 @@
 # MAGIC %sh
 # MAGIC echo "Starting on bash"
 # MAGIC my_function () {
-# MAGIC   print "My function was called";
+# MAGIC   echo "My function was called";
 # MAGIC }
 # MAGIC my_function
 
@@ -10,10 +10,6 @@
 
 # MAGIC %sh 
 # MAGIC my_function
-
-# COMMAND ----------
-
-dbutils.fs.ls("/")
 
 # COMMAND ----------
 
@@ -31,6 +27,22 @@ dbutils.fs.ls("/")
 # COMMAND ----------
 
 # MAGIC %sh ./bash_module.sh
+
+# COMMAND ----------
+
+# MAGIC %sh curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+# COMMAND ----------
+
+# MAGIC %sh az --help
+
+# COMMAND ----------
+
+# MAGIC %sh pip install databricks-cli
+
+# COMMAND ----------
+
+# MAGIC %sh databricks --help
 
 # COMMAND ----------
 
